@@ -1,252 +1,470 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neeraj Sethi | Flutter & Full-Stack Engineer</title>
-    <meta name="description" content="Portfolio of Neeraj Sethi, a Strategic Software Engineer specializing in Flutter development, system design, and workflow automation.">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <script>
-        tailwind.config = {
-            theme: {
-                fontFamily: {
-                    sans: ['Inter', 'sans-serif'],
-                },
-                extend: {
-                    colors: {
-                        primary: '#3B82F6', // Bright Blue for accents
-                        darkBg: '#0F172A',  // Deep slate background
-                        cardBg: '#1E293B',  // Slightly lighter slate for cards
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body { background-color: #0F172A; color: #e2e8f0; }
-        .gradient-text {
-            background: linear-gradient(to right, #3B82F6, #06b6d4);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neeraj Sethi - Flutter Developer & Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="style.css" rel="stylesheet">
 </head>
-<body class="antialiased">
-
-    <nav class="fixed w-full z-50 bg-darkBg/80 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold tracking-tight">
-                Neeraj<span class="text-primary">.dev</span>
-            </a>
-            <div class="hidden md:flex space-x-8 text-sm font-medium">
-                <a href="#about" class="hover:text-primary transition">About</a>
-                <a href="#experience" class="hover:text-primary transition">Experience</a>
-                <a href="#projects" class="hover:text-primary transition">Projects</a>
-                <a href="#skills" class="hover:text-primary transition">Skills</a>
-            </div>
-            <a href="mailto:imneerajsethi@gmail.com" class="hidden md:inline-block bg-primary hover:bg-blue-700 text-white px-5 py-2 rounded-md text-sm font-medium transition">
-                Hire Me
-            </a>
-        </div>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-brand">Neeraj Sethi</div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <section class="pt-40 pb-20 px-6 max-w-6xl mx-auto text-center md:text-left min-h-screen flex flex-col justify-center">
-        <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-            Hi, I'm Neeraj Sethi. <br>
-            I <span class="gradient-text">engineer efficiency.</span>
-        </h1>
-        <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-10 mx-auto md:mx-0">
-            Strategic Full-Stack Engineer specializing in scalable **Flutter** applications and **Python-based automation**. I don't just write code; I identify bottlenecks and architect systems that deliver measurable business impact.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <a href="#projects" class="bg-primary hover:bg-blue-700 text-white px-8 py-4 rounded-md font-semibold transition flex items-center justify-center">
-                View My Work <i class="fa-solid fa-arrow-right ml-2"></i>
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 class="hero-title">
+                <span class="greeting">Hi, I'm</span>
+                <span class="name">Neeraj Sethi</span>
+              </h1>
+              <p class="hero-subtitle">Strategic Software Engineer & Flutter Developer</p>
+              <p class="hero-description">
+                Transforming complex business requirements into production-ready architectures.
+                Specializing in cross-platform applications and process automation.
+              </p>
+              <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn btn-secondary">View My Work</a>
+              </div>
+              <div class="hero-stats">
+                <div class="stat">
+                  <span class="stat-number">70%</span>
+                  <span class="stat-label">Workflow Reduction</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">40%</span>
+                  <span class="stat-label">Dev Time Saved</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">100%</span>
+                  <span class="stat-label">Code Reuse</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p class="lead">
+                Strategic Software Engineer with a robust background in Full-Stack Flutter Development
+                and Process Automation. Proven expertise in System Thinking identifying operational
+                bottlenecks and architecting custom Python/JS tools.
+              </p>
+              <p>
+                I specialize in delivering scalable Web & Mobile solutions by leveraging a diverse stack
+                and translating complex business requirements into production-ready architectures within
+                tight deadlines. My approach combines technical excellence with strategic thinking to
+                solve real-world problems.
+              </p>
+              <div class="about-highlights">
+                <div class="highlight-item">
+                  <h3>System Thinking</h3>
+                  <p>Identifying bottlenecks and optimizing workflows</p>
+                </div>
+                <div class="highlight-item">
+                  <h3>Cross-Platform Expertise</h3>
+                  <p>Single codebase for Web, Android & iOS</p>
+                </div>
+                <div class="highlight-item">
+                  <h3>Full-Stack Development</h3>
+                  <p>From UI to backend and infrastructure</p>
+                </div>
+              </div>
+            </div>
+            <div class="about-info">
+              <div class="info-card">
+                <h3>Contact Information</h3>
+                <ul class="info-list">
+                  <li>
+                    <span class="info-label">Email:</span>
+                    <a href="mailto:imneerajsethi@gmail.com">imneerajsethi@gmail.com</a>
+                  </li>
+                  <li>
+                    <span class="info-label">Phone:</span>
+                    <a href="tel:+918199885020">+91 81998-85020</a>
+                  </li>
+                  <li>
+                    <span class="info-label">Location:</span>
+                    <span>Karnal, Haryana</span>
+                  </li>
+                  <li>
+                    <span class="info-label">LinkedIn:</span>
+                    <a href="https://linkedin.com/in/neerajsethi" target="_blank" rel="noopener">View Profile</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3 class="category-title">Core Development</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Flutter</span>
+                <span class="skill-tag">Dart</span>
+                <span class="skill-tag">GetX</span>
+                <span class="skill-tag">Cross-Platform</span>
+                <span class="skill-tag">Android</span>
+                <span class="skill-tag">iOS</span>
+                <span class="skill-tag">Web</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3 class="category-title">Web Technologies</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Tailwind CSS</span>
+                <span class="skill-tag">Responsive Design</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">JavaScript</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3 class="category-title">Backend & Infrastructure</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Express.js</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">REST APIs</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3 class="category-title">AI & Machine Learning</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">NLP</span>
+                <span class="skill-tag">MLOps</span>
+                <span class="skill-tag">Data Processing</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3 class="category-title">Tools & Concepts</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">System Design</span>
+                <span class="skill-tag">Problem Analysis</span>
+                <span class="skill-tag">Automation</span>
+                <span class="skill-tag">BunnyCDN</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3 class="category-title">Cloud & DevOps</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">GCP</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">CI/CD</span>
+                <span class="skill-tag">Google Analytics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-header">
+                <h3 class="project-title">General Insurance Agent App + Web Portal</h3>
+                <span class="project-date">May 2025 - Oct 2025</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech-badge">Flutter</span>
+                <span class="tech-badge">GetX</span>
+                <span class="tech-badge">GoRouter</span>
+                <span class="tech-badge">Cross-Platform</span>
+              </div>
+              <p class="project-description">
+                Orchestrated a high-performance cross-platform architecture enabling 100% code reuse
+                across Web and Android/iOS. Engineered scalable state management for complex multi-step
+                Agency and Customer onboarding workflows.
+              </p>
+              <ul class="project-highlights">
+                <li>100% code reuse across platforms</li>
+                <li>Complex multi-step onboarding workflows</li>
+                <li>Adaptive responsive design patterns</li>
+                <li>Deep linking and protected route guards</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-header">
+                <h3 class="project-title">Swachhta Setu</h3>
+                <span class="project-date">Jan 2026</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech-badge">Flutter</span>
+                <span class="tech-badge">Game Development</span>
+                <span class="tech-badge">2D Graphics</span>
+              </div>
+              <p class="project-description">
+                Developed an interactive educational game promoting civic awareness and waste segregation
+                habits. Collaborated with Municipal Corporation Karnal to deliver high-impact civic-tech solution.
+              </p>
+              <ul class="project-highlights">
+                <li>Complex game mechanics with collision detection</li>
+                <li>Real-time score tracking system</li>
+                <li>Custom 2D graphics and animations</li>
+                <li>Level-based architecture for engagement</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-header">
+                <h3 class="project-title">Industrial Skill App</h3>
+                <span class="project-date">Jun 2024 - Oct 2024</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech-badge">EdTech</span>
+                <span class="tech-badge">Flutter</span>
+                <span class="tech-badge">Cross-Platform</span>
+              </div>
+              <p class="project-description">
+                Built a cross-platform EdTech application designed to upskill users in industrial domains.
+                Architected dynamic quiz engine with immediate feedback loops and logic-based scoring.
+              </p>
+              <ul class="project-highlights">
+                <li>Dynamic quiz engine with feedback</li>
+                <li>Optimized content delivery for tutorials</li>
+                <li>Intuitive learning paths</li>
+                <li>Consistent Android & iOS performance</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-header">
+                <h3 class="project-title">High-Precision NLP Model</h3>
+                <span class="project-date">Research Project</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">NLP</span>
+                <span class="tech-badge">Machine Learning</span>
+                <span class="tech-badge">SVM</span>
+              </div>
+              <p class="project-description">
+                Built a custom POS Tagging pipeline for Hindi-English code-mixed data, achieving 91%
+                accuracy using advanced SVM and TF-IDF feature engineering techniques.
+              </p>
+              <ul class="project-highlights">
+                <li>91% accuracy on code-mixed data</li>
+                <li>Advanced feature engineering</li>
+                <li>Custom NLP pipeline</li>
+                <li>Production-ready model</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-header">
+                <h3 class="project-title">MLOps Pipeline</h3>
+                <span class="project-date">Infrastructure Project</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">MLOps</span>
+                <span class="tech-badge">Automation</span>
+                <span class="tech-badge">Docker</span>
+              </div>
+              <p class="project-description">
+                Designed a fully automated Machine Learning workflow from data preprocessing to model
+                deployment, reducing manual intervention and streamlining model updates.
+              </p>
+              <ul class="project-highlights">
+                <li>End-to-end automation</li>
+                <li>Reduced manual intervention</li>
+                <li>Streamlined deployment</li>
+                <li>Scalable infrastructure</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-header">
+                <h3 class="project-title">Modular Design System</h3>
+                <span class="project-date">Internal Tool</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech-badge">Flutter</span>
+                <span class="tech-badge">Design System</span>
+                <span class="tech-badge">Component Library</span>
+              </div>
+              <p class="project-description">
+                Developed a reusable Flutter widget library that standardized UI consistency across
+                projects and accelerated feature development by 40%.
+              </p>
+              <ul class="project-highlights">
+                <li>40% faster feature development</li>
+                <li>Reusable component library</li>
+                <li>Standardized UI patterns</li>
+                <li>Cross-project consistency</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience">
+        <div class="container">
+          <h2 class="section-title">Work Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3 class="timeline-title">Flutter Developer</h3>
+                  <span class="timeline-date">Jan 2025 - Present</span>
+                </div>
+                <p class="timeline-company">TechVoyageLab • Karnal</p>
+                <ul class="timeline-details">
+                  <li>Spearheaded development of complex cross-platform applications (Web & Mobile), reducing development time by 40%</li>
+                  <li>Led end-to-end delivery of SaaS-based General Insurance CRM with advanced state management</li>
+                  <li>Collaborated with government clients to deliver high-impact civic-tech solutions</li>
+                  <li>Established best practices for code modularity while mentoring junior developers</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3 class="timeline-title">Flutter Developer</h3>
+                  <span class="timeline-date">Apr 2024 - Dec 2024</span>
+                </div>
+                <p class="timeline-company">Articulate Solution • Karnal</p>
+                <ul class="timeline-details">
+                  <li>Developed robust mobile applications using Flutter & Dart with seamless API integration</li>
+                  <li>Optimized application performance ensuring smooth 60fps animations</li>
+                  <li>Translated Figma prototypes into pixel-perfect Flutter widgets with 100% design accuracy</li>
+                  <li>Resolved critical production bugs, improving app stability and user retention</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="certifications">
+            <h3 class="subsection-title">Certifications</h3>
+            <div class="cert-grid">
+              <div class="cert-item">
+                <div class="cert-icon">GCP</div>
+                <div class="cert-info">
+                  <h4>Data Storage & Management</h4>
+                  <p>Google Cloud Platform</p>
+                </div>
+              </div>
+              <div class="cert-item">
+                <div class="cert-icon">AWS</div>
+                <div class="cert-info">
+                  <h4>Well-Architected Framework</h4>
+                  <p>Amazon Web Services</p>
+                </div>
+              </div>
+              <div class="cert-item">
+                <div class="cert-icon">GA</div>
+                <div class="cert-info">
+                  <h4>Google Analytics</h4>
+                  <p>Google Skillshop</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">Let's Work Together</h2>
+          <p class="contact-subtitle">
+            Looking for a strategic software engineer to transform your ideas into scalable solutions?
+            Let's discuss how I can help your business grow.
+          </p>
+          <div class="platform-links">
+            <a href="https://www.fiverr.com/neerajsethi" target="_blank" rel="noopener" class="platform-card fiverr-card">
+              <div class="platform-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="80" height="80">
+                  <rect fill="#1DBF73" width="200" height="200"/>
+                  <text x="50%" y="50%" font-size="80" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">f</text>
+                </svg>
+              </div>
+              <h3>Hire on Fiverr</h3>
+              <p>Browse my Fiverr profile and hire me for your next project</p>
+              <span class="platform-cta">Visit Profile</span>
             </a>
-            <a href="#" target="_blank" class="bg-cardBg border border-slate-700 hover:border-primary text-white px-8 py-4 rounded-md font-semibold transition flex items-center justify-center">
-                Download Resume <i class="fa-solid fa-download ml-2"></i>
+
+            <a href="https://www.upwork.com/freelancers/~neerajsethi" target="_blank" rel="noopener" class="platform-card upwork-card">
+              <div class="platform-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="80" height="80">
+                  <rect fill="#14A800" width="200" height="200"/>
+                  <text x="50%" y="50%" font-size="80" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">U</text>
+                </svg>
+              </div>
+              <h3>Hire on Upwork</h3>
+              <p>Check my Upwork portfolio and connect for freelance opportunities</p>
+              <span class="platform-cta">Visit Profile</span>
             </a>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <h3>Direct Contact</h3>
+              <p><a href="mailto:imneerajsethi@gmail.com">imneerajsethi@gmail.com</a></p>
+              <p><a href="tel:+918199885020">+91 81998-85020</a></p>
+              <p class="location">Karnal, Haryana</p>
+            </div>
+          </div>
         </div>
+      </section>
+    </main>
 
-        <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 p-8 bg-cardBg rounded-2xl border border-slate-800 shadow-xl">
-            <div class="text-center">
-                <div class="text-4xl md:text-5xl font-bold text-primary mb-2">~70%</div>
-                <p class="text-slate-400 font-medium">Reduction in manual workflows via Python automation.</p>
-            </div>
-            <div class="text-center border-t md:border-t-0 md:border-l border-slate-700 pt-6 md:pt-0">
-                <div class="text-4xl md:text-5xl font-bold text-primary mb-2">40% Faster</div>
-                <p class="text-slate-400 font-medium">Feature development using modular Flutter architecture.</p>
-            </div>
-            <div class="text-center border-t md:border-t-0 md:border-l border-slate-700 pt-6 md:pt-0">
-                <div class="text-4xl md:text-5xl font-bold text-primary mb-2">91% Accuracy</div>
-                <p class="text-slate-400 font-medium">Achieved in Hindi-English code-mixed NLP POS-tagging.</p>
-            </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2026 Neeraj Sethi. All rights reserved.</p>
+          <p class="footer-tagline">Transforming ideas into scalable solutions</p>
         </div>
-    </section>
-
-    <section id="experience" class="py-20 px-6 max-w-6xl mx-auto relative">
-        <h2 class="text-3xl font-bold mb-12 text-center md:text-left"><span class="text-primary">#</span> Professional Experience</h2>
-        
-        <div class="absolute left-6 md:left-1/2 h-full w-0.5 bg-slate-800 transform -translate-x-1/2 hidden md:block"></div>
-
-        <div class="space-y-12 relative">
-            <div class="flex flex-col md:flex-row items-center justify-between w-full">
-                <div class="order-1 md:w-5/12 text-left md:text-right pr-0 md:pr-8">
-                    <h3 class="text-xl font-bold text-white">Flutter Developer (Lead)</h3>
-                    <p class="text-primary font-medium mb-2">TechVoyageLab | Jan 2025 – Present</p>
-                    <ul class="text-slate-400 text-sm list-disc list-inside inline-block text-left">
-                        <li>Led single-codebase architecture for Web & Mobile, reducing effort by ~40%.</li>
-                        <li>Delivered SaaS General Insurance CRM with complex GetX state management.</li>
-                        <li>Built civic-tech solutions for Municipal Corporation, Karnal.</li>
-                    </ul>
-                </div>
-                <div class="z-10 order-1 bg-primary shadow-lg shadow-blue-500/20 w-8 h-8 rounded-full border-4 border-darkBg hidden md:block"></div>
-                <div class="order-1 md:w-5/12 pl-0 md:pl-8 mt-4 md:mt-0"></div> </div>
-
-            <div class="flex flex-col md:flex-row items-center justify-between w-full">
-                <div class="order-1 md:w-5/12 pr-0 md:pr-8 mt-4 md:mt-0"></div> <div class="z-10 order-1 bg-cardBg border-2 border-slate-700 w-8 h-8 rounded-full hidden md:block"></div>
-                <div class="order-1 md:w-5/12 text-left pl-0 md:pl-8">
-                    <h3 class="text-xl font-bold text-white">Flutter Developer</h3>
-                    <p class="text-primary font-medium mb-2">Articulate Solution | Apr 2024 – Dec 2024</p>
-                    <ul class="text-slate-400 text-sm list-disc list-inside">
-                        <li>Optimized apps to achieve smooth **60 FPS performance**.</li>
-                        <li>Converted high-fidelity Figma designs into pixel-perfect widgets.</li>
-                        <li>Resolved critical production issues in legacy codebases.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-     <section id="skills" class="py-20 px-6 max-w-6xl mx-auto bg-cardBg/50 my-20 rounded-3xl">
-        <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-primary">#</span> Core Technologies</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div class="p-6 bg-cardBg rounded-xl border border-slate-800 hover:border-primary transition group">
-                <i class="fa-brands fa-flutter text-4xl text-blue-400 mb-4 group-hover:scale-110 transition"></i>
-                <h4 class="font-bold">Flutter & Dart</h4>
-            </div>
-            <div class="p-6 bg-cardBg rounded-xl border border-slate-800 hover:border-primary transition group">
-                <i class="fa-brands fa-react text-4xl text-cyan-400 mb-4 group-hover:scale-110 transition"></i>
-                <h4 class="font-bold">Next.js & React</h4>
-            </div>
-            <div class="p-6 bg-cardBg rounded-xl border border-slate-800 hover:border-primary transition group">
-                <i class="fa-brands fa-python text-4xl text-yellow-500 mb-4 group-hover:scale-110 transition"></i>
-                <h4 class="font-bold">Python & FastAPI</h4>
-            </div>
-             <div class="p-6 bg-cardBg rounded-xl border border-slate-800 hover:border-primary transition group">
-                <i class="fa-solid fa-brain text-4xl text-orange-500 mb-4 group-hover:scale-110 transition"></i>
-                <h4 class="font-bold">TensorFlow & ML</h4>
-            </div>
-            <div class="p-6 bg-cardBg rounded-xl border border-slate-800 hover:border-primary transition group">
-                <i class="fa-brands fa-docker text-4xl text-blue-600 mb-4 group-hover:scale-110 transition"></i>
-                <h4 class="font-bold">Docker</h4>
-            </div>
-            <div class="p-6 bg-cardBg rounded-xl border border-slate-800 hover:border-primary transition group">
-                <i class="fa-brands fa-git-alt text-4xl text-red-500 mb-4 group-hover:scale-110 transition"></i>
-                <h4 class="font-bold">Git & DevOps</h4>
-            </div>
-            <div class="p-6 bg-cardBg rounded-xl border border-slate-800 hover:border-primary transition group">
-                <i class="fa-brands fa-figma text-4xl text-pink-500 mb-4 group-hover:scale-110 transition"></i>
-                <h4 class="font-bold">Figma to Code</h4>
-            </div>
-            <div class="p-6 bg-cardBg rounded-xl border border-slate-800 hover:border-primary transition group">
-                <i class="fa-solid fa-database text-4xl text-green-500 mb-4 group-hover:scale-110 transition"></i>
-                <h4 class="font-bold">MongoDB & SQL</h4>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="py-20 px-6 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center md:text-left"><span class="text-primary">#</span> Featured Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-            <div class="bg-cardBg rounded-2xl overflow-hidden border border-slate-800 hover:shadow-xl hover:shadow-primary/10 transition group">
-                <div class="h-48 bg-slate-700/50 flex items-center justify-center relative overflow-hidden">
-                     <div class="absolute inset-0 bg-gradient-to-tr from-darkBg to-transparent opacity-80 z-10"></div>
-                    <i class="fa-solid fa-wand-magic-sparkles text-6xl text-slate-500 z-0 group-hover:scale-110 transition"></i>
-                    <h3 class="absolute bottom-4 left-6 text-2xl font-bold z-20">Workflow Automation Tool</h3>
-                </div>
-                <div class="p-8">
-                    <p class="text-slate-400 mb-4 line-clamp-3">
-                        Designed a Python-based tool to eliminate repetitive steps in Photoshop design workflows. Enabled batch processing and standardized outputs.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-xs font-medium bg-slate-800 text-primary px-3 py-1 rounded-full">Python</span>
-                        <span class="text-xs font-medium bg-slate-800 text-primary px-3 py-1 rounded-full">Scripting</span>
-                        <span class="text-xs font-medium bg-slate-800 text-primary px-3 py-1 rounded-full">System Design</span>
-                    </div>
-                    <div class="flex items-center text-sm font-bold text-green-400">
-                        <i class="fa-solid fa-chart-line mr-2"></i> Impact: Saved 3-4 hours daily per user.
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-cardBg rounded-2xl overflow-hidden border border-slate-800 hover:shadow-xl hover:shadow-primary/10 transition group">
-                <div class="h-48 bg-slate-700/50 flex items-center justify-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-darkBg to-transparent opacity-80 z-10"></div>
-                    <i class="fa-solid fa-building-shield text-6xl text-slate-500 z-0 group-hover:scale-110 transition"></i>
-                    <h3 class="absolute bottom-4 left-6 text-2xl font-bold z-20">Insurance CRM Portal</h3>
-                </div>
-                <div class="p-8">
-                    <p class="text-slate-400 mb-4 line-clamp-3">
-                        Architected a **100% code-reuse** Flutter solution for Web & Mobile. Solved complex routing challenges using GoRouter for deep linking and protected dashboards.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-xs font-medium bg-slate-800 text-primary px-3 py-1 rounded-full">Flutter Web & Mobile</span>
-                        <span class="text-xs font-medium bg-slate-800 text-primary px-3 py-1 rounded-full">GetX</span>
-                        <span class="text-xs font-medium bg-slate-800 text-primary px-3 py-1 rounded-full">GoRouter</span>
-                    </div>
-                    <a href="#" class="inline-flex items-center text-primary hover:underline">
-                        View Project <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
-                    </a>
-                </div>
-            </div>
-
-             <div class="bg-cardBg rounded-2xl overflow-hidden border border-slate-800 hover:shadow-xl hover:shadow-primary/10 transition group md:col-span-2 lg:col-span-1">
-                <div class="h-48 bg-slate-700/50 flex items-center justify-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-darkBg to-transparent opacity-80 z-10"></div>
-                    <i class="fa-solid fa-language text-6xl text-slate-500 z-0 group-hover:scale-110 transition"></i>
-                    <h3 class="absolute bottom-4 left-6 text-2xl font-bold z-20">Hindi-English NLP Model</h3>
-                </div>
-                <div class="p-8">
-                    <p class="text-slate-400 mb-4 line-clamp-3">
-                        Developed a code-mixed POS-tagging system. Built a complete end-to-end MLOps pipeline, automating data preprocessing to model deployment.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-xs font-medium bg-slate-800 text-primary px-3 py-1 rounded-full">Python & SVM</span>
-                        <span class="text-xs font-medium bg-slate-800 text-primary px-3 py-1 rounded-full">TF-IDF</span>
-                        <span class="text-xs font-medium bg-slate-800 text-primary px-3 py-1 rounded-full">MLOps</span>
-                    </div>
-                    <div class="flex items-center text-sm font-bold text-green-400">
-                        <i class="fa-solid fa-check-double mr-2"></i> Achievement: 91% Accuracy Model.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-darkBg pt-20 pb-10 text-center border-t border-slate-800">
-        <h2 class="text-3xl font-bold mb-8">Let's build something scalable.</h2>
-        <p class="text-slate-400 mb-8">Open for opportunities in Full-Stack Flutter Development and Automation Engineering.</p>
-        
-        <div class="flex justify-center space-x-6 mb-12">
-            <a href="mailto:imneerajsethi@gmail.com" class="text-slate-300 hover:text-primary text-3xl transition">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/imneerajsethi" target="_blank" class="text-slate-300 hover:text-primary text-3xl transition">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/imneerajsethii" target="_blank" class="text-slate-300 hover:text-primary text-3xl transition">
-                <i class="fa-brands fa-github"></i>
-            </a>
-        </div>
-        <p class="text-slate-500 text-sm">© 2025 Neeraj Sethi. Designed & Engineered.</p>
+      </div>
     </footer>
 
-</body>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
